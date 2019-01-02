@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Static Comp 2</title>
+  <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+  <nav>
+    <section class="sidebar" id="sidebar-header">
+      <img src="images/archie.jpg" alt="Profile Photo of Archie the Dog" id="archie-photo">
+      <p id="nav-name">Archie Dog <i class="fas fa-angle-down"></i></p>
+      </section>
+    <hr class="nav-hr">
+    <section class="sidebar">
+      <p class="nav-title">Main</p>
+      <ul>
+        <li><i class="fas fa-home"></i>HOME</li>
+        <li><i class="fas fa-briefcase"></i>JOBS</li>
+        <li><i class="fas fa-file"></i>RESUME</li>
+        <li><i class="fas fa-calendar-check"></i>TASK</li>
+        <li><i class="fas fa-calendar-alt"></i>CALENDAR</li>
+      </ul>
+    </section>
+    <hr class="nav-hr">
+    <section class="sidebar">
+      <p class="nav-title">Admin</p>
+      <ul>
+        <li><i class="fas fa-users"></i>USERS</li>
+        <li><i class="fas fa-map-marker-alt"></i>LOCATIONS</li>
+        <li><i class="fas fa-folder-open"></i>WORKFLOWS</li>
+        <li><i class="fas fa-clipboard-list"></i>JOB BOARDS</li>
+        <li><i class="fas fa-network-wired"></i>SOCIAL</li>
+      </ul>
+    </section>
+    <hr class="nav-hr">
+    <section class="sidebar">
+      <p class="nav-title">Categories</p>
+      <ul>
+        <li><i class="fas fa-check-square" id="yellow-box"></i>Administrative</li>
+        <li><i class="fas fa-square" id="blue-box"></i>Design</li>
+        <li><i class="fas fa-square" id="red-box"></i>Executive</li>
+        <li><i class="fas fa-square" id="green-box"></i>Human Resources</li>
+      </ul>
+    </section>
+  </nav>
+  <section class="content">
+    <header>
+      <section class="headers-search">
+        <div class="search-items search-items-hover menu-icon">
+          <i class="fas fa-caret-left"></i>
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="search-items search-bar">
+          <span id="search-icon"><i class="fas fa-search"></i></span>
+          <input type="text" value="Search for a job, task, or resume" id="search-input">
+        </div>
+        <div class="search-items search-items-hover add-user-icon">
+          <i class="fas fa-user-plus"></i>
+        </div>
+        <div class="search-items search-items-hover add-event-icon">
+          <i class="fas fa-calendar-plus"></i>
+        </div>
+        <div class="search-items search-items-hover grid-view-icon">
+          <i class="fas fa-th"></i>
+        </div>
+      </section>
+      <section class="headers-title">
+        <div id="title-container">
+          <h1>Customer Service Representative</h1>
+          <p><i class="fas fa-map-marker-alt"></i>San Francisco, CA &bull; <a href="fake.com">Preview this post</a></p>
+        </div>
+        <div id="side-icons">
+          <span id="status-icon"><i class="fas fa-circle"></i>OPEN</span>
+          <i class="fas fa-bookmark"></i>
+          <i class="fas fa-pen"></i>
+          <i class="fas fa-trash-alt"></i>
+        </div>
+      </section>
+      <section class="headers-nav">
+        <h5 class="nav-items">SUMMARY</h5>
+        <h5 class="nav-items">APPLICANTS</h5>
+        <h5 class="nav-items">JOB BOARD</h5>
+        <h5 class="nav-items">INTERVIEWS</h5>
+        <h5 class="nav-items">ACTIVITY</h5>
+        <h5 class="nav-items">BROADCAST</h5>
+        <h5 class="nav-items">NOTIFICATIONS</h5>
+      </section>
+    </header>
+    <main>
+      <section class="data">
+        <section class="circle-graph">
+          <section class="circle-container">
+            <div class="single-chart">
+              <svg viewBox="0 0 36 36" class="circular-chart green">
+                <path class="circle-background"
+                  d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="80, 100"
+                  d="M18 33.9155
+                    a 15.9155 15.9155 0 0 1 0 -31.831
+                    a 15.9155 15.9155 0 0 1 0 31.831"
+                />
+                <text x="18" y="20.35" class="graph-label">3,154</text>
+                <text x="18" y="25.24" class="graph-label-lower">APPLICANTS</text>
+              </svg>
+            </div>
+            <div class="single-chart">
+              <svg viewBox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-background"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="40, 100"
+                  d="M18 33.9155
+                    a 15.9155 15.9155 0 0 1 0 -31.831
+                    a 15.9155 15.9155 0 0 1 0 31.831"
+                />
+                <text x="18" y="20.35" class="graph-label">1,546</text>
+                <text x="18" y="25.24" class="graph-label-lower">INTERVIEWS</text>
+              </svg>
+            </div>
+            <div class="single-chart">
+              <svg viewBox="0 0 36 36" class="circular-chart purple">
+                <path class="circle-background"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="25, 100"
+                  d="M18 33.9155
+                    a 15.9155 15.9155 0 0 1 0 -31.831
+                    a 15.9155 15.9155 0 0 1 0 31.831"
+                />
+                <text x="18" y="20.35" class="graph-label">912</text>
+                <text x="18" y="25.24" class="graph-label-lower">FORWARDS</text>
+              </svg>
+            </div>
+        </section>
+        <p class="blurbs circle-blurb">TOTALS &bull; Out of 5,231 views</p>
+      </section>
+      <section class="bar-chart">
+        <img src="images/chart.png" id="bar-graph">
+        <p class="blurbs bar-blurb">APPLICANTS/DAY</p>
+      </section>
+      <p id="container-line">  <i class="fas fa-angle-up"></i></p>
+      <section class="description">
+        <section class="description-grid">
+          <span id="description-header"><strong>JOB DESCRIPTION</strong></span>
+          <span id="description-header"><i class="fas fa-pen edit-pen"></i>EDIT</span>
+          <span><strong>POSITION TITLE</strong></span>
+          <span>Customer Service Representative</span>
+          <span><strong>LOCATION</strong></span>
+          <span>San Francisco, CA</span>
+          <span><strong>EMPLOYMENT TYPE</strong></span>
+          <span>Full-time</span>
+          <span><strong>EXPERIENCE</strong></span>
+          <span>Mid-level</span>
+          <span><strong>STATUS</strong></span>
+          <span>Open</span>
+          <span><strong>DESCRIPTION</strong></span>
+          <span>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers; responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</span>
+          <span><strong>HIRING LEAD</strong></span>
+          <span id="hiring-pic"><img src="images/iceland.jpg" alt="Jessica in Iceland" id="iceland-pic">Tom Tizzy</span>
+          <span><strong>APPROVED SALARY</strong></span>
+          <span><strong>$58,000</strong></span>
+        </section>
+      </section>
+      <section id="widget-container">
+        <section class="widgets widget-links" id="facebook-link">
+          <p class="widget-icons"><i class="fab fa-facebook-f"></i>Post to Facebook</p>
+        </section>
+        <section class="widgets widget-links" id="twitter-link">
+          <p class="widget-icons"><i class="fab fa-twitter"></i>Tweet this Job</p>
+        </section>
+        <section class="widgets widget-links" id="linkedin-link">
+          <p class="widget-icons"><i class="fab fa-linkedin"></i>Post to LinkedIn</p>
+        </section>
+        <section class="widgets widget-inputs" id="link-to-job">
+          <h4><i class="fas fa-globe"></i>Link to this Job</h4>
+          <p>Doggo ipsum very jealous pupper very taste wow pupperino  borking doggo.</p>
+          <div class="input-container">
+            <input type="text" value="http://loremipsum.dog/sitgood..." id="link-input"><button>Copy</button>
+          </div>
+        </section>
+        <hr>
+        <section class="widgets widget-inputs" id="button-widget">
+          <h4><i class="fas fa-external-link-square-alt"></i>Use the Button Widget</h4>
+          <p>Doggo ipsum very jealous pupper very taste wow pupperino  borking doggo.</p>
+          <div class="input-container">
+            <input type="text" value="<script type=thisisjustfake..." id="widget-input"><button>Copy</button>
+          </div>
+        </section>
+        <hr>
+        <section class="widgets widget-inputs" id="upload-resume">
+          <h4><i class="fas fa-paper-plane"></i>Upload Resumes by Email</h4>
+          <p>Doggo ipsum very jealous pupper very taste wow pupperino  borking doggo.</p>
+          <div class="input-container">
+            <input type="text" value="archiethedog@gmail.com" id="resume-input">
+          </div>
+        </section>
+      </section>
+    </main>
+  </section>
+</body>
+</html>
